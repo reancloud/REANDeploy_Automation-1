@@ -1,3 +1,4 @@
+@app_test
 Feature: functional test for application
 
 Background:
