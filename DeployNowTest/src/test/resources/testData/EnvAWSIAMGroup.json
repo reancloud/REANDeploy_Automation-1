@@ -1,0 +1,31 @@
+{
+  "layout": "[ {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 1980,\n    \"y\" : 2002\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"test-iam\",\n  \"resource\" : {\n    \"name\" : \"test-iam\",\n    \"resourceName\" : \"aws_iam_group\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/iam/iam.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"1953e61b-64df-4338-a1b6-cef662b1df6b\",\n  \"z\" : 1,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 242\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"test-iam\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/iam/iam.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n} ]",
+  "providerName": " ",
+  "connectionName": "PX_SSH",
+  "connectionType": "SSH",
+  "providerType": "aws",
+  "preDeployScript": null,
+  "postDeployScript": null,
+  "preDestroyScript": null,
+  "postDestroyScript": null,
+  "exportedByEmail": "automation.rcs@gmail.com",
+  "exportedOn": 1486527775600,
+  "description": "I\nam\nusing\nSSH\nconnection\nand\nAWS\nprovider",
+  "name": "EnvAWSIAMGroup",
+  "resources": [
+    {
+      "connectionName": null,
+      "connectionType": null,
+      "dependsOn": null,
+      "resourceName": "aws_iam_group",
+      "name": "test-iam",
+      "packages": null,
+      "attributes": {
+        "path": "/",
+        "name": "test-iam"
+      }
+    }
+  ],
+  "location": null,
+  "type": null
+}

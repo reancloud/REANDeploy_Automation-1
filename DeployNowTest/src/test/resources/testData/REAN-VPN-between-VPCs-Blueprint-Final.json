@@ -1,0 +1,846 @@
+{
+  "rean_deploy_version": "0.9.0",
+  "environments": [
+    {
+      "preDeployScript": null,
+      "postDeployScript": null,
+      "preDestroyScript": null,
+      "postDestroyScript": null,
+      "exportedByEmail": "auto@mailinator.com",
+      "exportedOn": 1493887155262,
+      "providerType": "aws",
+      "providerName": "Auto_AWS",
+      "connectionName": "connection-vpn",
+      "connectionType": "SSH",
+      "layout": "[ {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 168,\n    \"y\" : 205\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"VPC1\",\n  \"resource\" : {\n    \"name\" : \"VPC1\",\n    \"resourceName\" : \"aws_vpc\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonVPC.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"cc11662b-7407-4c78-a70c-f06263e647b8\",\n  \"z\" : 1,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 63\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"VPC1\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonVPC.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 169,\n    \"y\" : 308\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"subnet_private1\",\n  \"resource\" : {\n    \"name\" : \"subnet_private1\",\n    \"resourceName\" : \"aws_subnet\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonVPCSubnet.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"03ae2bea-6f20-4d4c-8abe-2c2450f544d1\",\n  \"z\" : 2,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 62\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"subnet_private1\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonVPCSubnet.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 367,\n    \"y\" : 315\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"subnet_public1\",\n  \"resource\" : {\n    \"name\" : \"subnet_public1\",\n    \"resourceName\" : \"aws_subnet\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonVPCSubnet.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"05bd070d-5f0e-4141-a468-838876c0060c\",\n  \"z\" : 3,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 60\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"subnet_public1\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonVPCSubnet.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 376,\n    \"y\" : 236\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"IGW1\",\n  \"resource\" : {\n    \"name\" : \"IGW1\",\n    \"resourceName\" : \"aws_internet_gateway\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonVPC_internetgateway.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"e7ad69f9-ad2a-40e7-9d53-fe508908052c\",\n  \"z\" : 6,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 67\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"IGW1\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonVPC_internetgateway.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 381,\n    \"y\" : 151\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"route1\",\n  \"resource\" : {\n    \"name\" : \"route1\",\n    \"resourceName\" : \"aws_route_table\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonRoute53_routetable.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"c9e27304-26f1-4daf-95d5-451f20abe0ba\",\n  \"z\" : 20,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 52\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"route1\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonRoute53_routetable.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 168,\n    \"y\" : 390\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"node1_private\",\n  \"resource\" : {\n    \"name\" : \"node1_private\",\n    \"resourceName\" : \"aws_instance\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/ec2/Compute_AmazonEC2_instance.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"5d16413c-e235-45e4-a818-21aef1fbaf0b\",\n  \"z\" : 47,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 68\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"node1_private\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/ec2/Compute_AmazonEC2_instance.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 166,\n    \"y\" : 502\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"security_grp1_private\",\n  \"resource\" : {\n    \"name\" : \"security_grp1_private\",\n    \"resourceName\" : \"aws_security_group\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/aws.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"a498935a-fb86-4ffc-ab86-7fc4d6a683a6\",\n  \"z\" : 57,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 57\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"security_grp1_private\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/aws.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 168.916015625,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 166,\n    \"y\" : 144\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"route_table_asso_pub_sub\",\n  \"resource\" : {\n    \"name\" : \"route_table_asso_pub_sub\",\n    \"resourceName\" : \"aws_route_table_association\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonRoute53_routetable.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"ef36743e-f5e7-4fa4-838d-9aff79b77185\",\n  \"z\" : 183,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 69\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"route_table_asso_pub_sub\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonRoute53_routetable.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 369,\n    \"y\" : 404\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"node1\",\n  \"resource\" : {\n    \"name\" : \"node1\",\n    \"resourceName\" : \"aws_instance\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/ec2/Compute_AmazonEC2_instance.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"abed4767-164f-47f8-99ab-c2d629c4d689\",\n  \"z\" : 202,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 51\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"node1\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/ec2/Compute_AmazonEC2_instance.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 557,\n    \"y\" : 376\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"security_grp1\",\n  \"resource\" : {\n    \"name\" : \"security_grp1\",\n    \"resourceName\" : \"aws_security_group\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/aws.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"e8a03d09-db9a-4c87-ae6a-06e82ff626ea\",\n  \"z\" : 214,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 53\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"security_grp1\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/aws.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 754,\n    \"y\" : 696\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"Output\",\n  \"resource\" : {\n    \"name\" : \"Output\",\n    \"resourceName\" : \"output\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/variable.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"d35a64a6-c604-4590-a1ba-a1450a7504cc\",\n  \"z\" : 221,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 56\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"Output\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/variable.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : -3,\n    \"y\" : 58\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"Input Variables\",\n  \"resource\" : {\n    \"name\" : \"Input Variables\",\n    \"resourceName\" : \"Input Variables\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/variable.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"05f4c678-559e-4d43-960d-31ef201ee2eb\",\n  \"z\" : 256,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 59\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"Input Variables\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/variable.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 1165,\n    \"y\" : 192\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"VPC2\",\n  \"resource\" : {\n    \"name\" : \"VPC2\",\n    \"resourceName\" : \"aws_vpc\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonVPC.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"10428f09-f021-44a9-bba6-136f6b96e497\",\n  \"z\" : 272,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 61\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"VPC2\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonVPC.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 961,\n    \"y\" : 281\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"subnet_public2\",\n  \"resource\" : {\n    \"name\" : \"subnet_public2\",\n    \"resourceName\" : \"aws_subnet\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonVPCSubnet.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"e5d9f612-8576-4341-aa05-07fb14800441\",\n  \"z\" : 307,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 70\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"subnet_public2\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonVPCSubnet.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 1169,\n    \"y\" : 277\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"subnet_private2\",\n  \"resource\" : {\n    \"name\" : \"subnet_private2\",\n    \"resourceName\" : \"aws_subnet\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonVPCSubnet.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"33ecac95-518e-4772-80e6-4e4be7858eea\",\n  \"z\" : 308,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 49\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"subnet_private2\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonVPCSubnet.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 955,\n    \"y\" : 196\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"IGW2\",\n  \"resource\" : {\n    \"name\" : \"IGW2\",\n    \"resourceName\" : \"aws_internet_gateway\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonVPC_internetgateway.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"9065563c-97de-47b7-a354-b97e6d1fc1ab\",\n  \"z\" : 328,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 47\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"IGW2\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonVPC_internetgateway.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 1160,\n    \"y\" : 97\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"route2\",\n  \"resource\" : {\n    \"name\" : \"route2\",\n    \"resourceName\" : \"aws_route_table\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonRoute53_routetable.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"0f66e9af-0142-49cd-8512-ee65da2530ed\",\n  \"z\" : 349,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 48\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"route2\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonRoute53_routetable.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 168.916015625,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 949,\n    \"y\" : 103\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"route_table_ass2_pub_sub\",\n  \"resource\" : {\n    \"name\" : \"route_table_ass2_pub_sub\",\n    \"resourceName\" : \"aws_route_table_association\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonRoute53_routetable.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"97f73e5e-eba2-4278-92e4-1dd0840bba25\",\n  \"z\" : 372,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 64\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"route_table_ass2_pub_sub\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonRoute53_routetable.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 958,\n    \"y\" : 379\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"node2\",\n  \"resource\" : {\n    \"name\" : \"node2\",\n    \"resourceName\" : \"aws_instance\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/ec2/Compute_AmazonEC2_instance.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"12239675-765d-42f9-b11e-d70fde52a9e0\",\n  \"z\" : 396,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 50\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"node2\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/ec2/Compute_AmazonEC2_instance.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 769,\n    \"y\" : 381\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"security_grp2\",\n  \"resource\" : {\n    \"name\" : \"security_grp2\",\n    \"resourceName\" : \"aws_security_group\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/aws.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"c6a1c131-14b9-48c1-abb8-1e85aeedfa9f\",\n  \"z\" : 420,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 45\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"security_grp2\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/aws.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 367,\n    \"y\" : 502\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"EIP1\",\n  \"resource\" : {\n    \"name\" : \"EIP1\",\n    \"resourceName\" : \"aws_eip_association\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/ec2/Compute_AmazonEC2_ElasticIP.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"851cf019-3af7-449c-8295-f0b9b4bb691b\",\n  \"z\" : 427,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 66\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"EIP1\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/ec2/Compute_AmazonEC2_ElasticIP.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 958,\n    \"y\" : 479\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"EIP2\",\n  \"resource\" : {\n    \"name\" : \"EIP2\",\n    \"resourceName\" : \"aws_eip_association\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/ec2/Compute_AmazonEC2_ElasticIP.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"63eb4abb-842e-4ebb-91a2-f5289068cbc9\",\n  \"z\" : 434,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 54\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"EIP2\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/ec2/Compute_AmazonEC2_ElasticIP.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 1175,\n    \"y\" : 373\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"node2_private\",\n  \"resource\" : {\n    \"name\" : \"node2_private\",\n    \"resourceName\" : \"aws_instance\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/ec2/Compute_AmazonEC2_instance.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"19cf6dae-a19f-42ca-a2f8-79ded3dfaa02\",\n  \"z\" : 465,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 65\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"node2_private\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/ec2/Compute_AmazonEC2_instance.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 1167,\n    \"y\" : 480\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"security_grp2_private\",\n  \"resource\" : {\n    \"name\" : \"security_grp2_private\",\n    \"resourceName\" : \"aws_security_group\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/aws.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"346850d2-9107-4d71-bf3b-0bd9b29bc87a\",\n  \"z\" : 496,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 58\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"security_grp2_private\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/aws.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 161.1162109375,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 168,\n    \"y\" : 60\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"route_table_asso_pri_sub\",\n  \"resource\" : {\n    \"name\" : \"route_table_asso_pri_sub\",\n    \"resourceName\" : \"aws_route_table_association\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonRoute53_routetable.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"21078093-7b10-4d0e-b155-5c74647aa5ff\",\n  \"z\" : 541,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 55\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"route_table_asso_pri_sub\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonRoute53_routetable.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 161.1162109375,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 744,\n    \"y\" : 107\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"route_table_ass2_pri_sub\",\n  \"resource\" : {\n    \"name\" : \"route_table_ass2_pri_sub\",\n    \"resourceName\" : \"aws_route_table_association\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/vpc/Networking_AmazonRoute53_routetable.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"df5c7290-baeb-40c9-b3ff-d72d38533b4b\",\n  \"z\" : 588,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 46\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"route_table_ass2_pri_sub\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/vpc/Networking_AmazonRoute53_routetable.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n} ]",
+      "description": "Network envirnoment creation for VPC to VPC communication using openswan",
+      "name": "REAN-VPN-between-VPCs-Network-Blueprint",
+      "resources": [
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_security_group",
+          "name": "security_grp2_private",
+          "packages": null,
+          "attributes": {
+            "ingress": "[{\"from_port\":0,\"to_port\":0,\"protocol\":\"-1\",\"cidr_blocks\":[\"${var.my_public_ip}/32\",\"${node2.private_ip}/32\",\"${node1.private_ip}/32\"]}]",
+            "vpc_id": "${VPC2.id}",
+            "name": "security_grp2_private",
+            "description": null,
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"sercurity_grp2_private\"}",
+            "egress": "[{\"from_port\":0,\"to_port\":0,\"protocol\":\"-1\",\"cidr_blocks\":[\"0.0.0.0/0\"]}]"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": "${node1.id}",
+          "resourceName": "output",
+          "name": "Output",
+          "packages": null,
+          "attributes": {
+            "output": "{\"EIP1\":{\"value\":\"${EIP1.public_ip}\"},\"node1_ip\":{\"value\":\"${node1.private_ip}\"},\"node1_private_ip\":{\"value\":\"${node1_private.private_ip}\"},\"security_grp1_id\":{\"value\":\"${security_grp1.id}\"},\"security_grp1_private_id\":{\"value\":\"${security_grp1_private.id}\"},\"security_grp2_id\":{\"value\":\"${security_grp2.id}\"},\"security_grp2_private_id\":{\"value\":\"${security_grp2_private.id}\"},\"EIP2\":{\"value\":\"${EIP2.public_ip}\"},\"node2_ip\":{\"value\":\"${node2.private_ip}\"},\"node2_private_ip\":{\"value\":\"${node2_private.private_ip}\"},\"VPC1_CIDR\":{\"value\":\"${VPC1.cidr_block}\"},\"VPC2_CIDR\":{\"value\":\"${VPC2.cidr_block}\"}}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": "connection-vpn",
+          "connectionType": "SSH",
+          "customConnection": null,
+          "dependsOn": "subnet_public1",
+          "resourceName": "aws_instance",
+          "name": "node1",
+          "packages": null,
+          "attributes": {
+            "ebs_block_device": null,
+            "availability_zone": null,
+            "iam_instance_profile": null,
+            "associate_public_ip_address": "true",
+            "tenancy": null,
+            "user_data": null,
+            "source_dest_check": "false",
+            "monitoring": null,
+            "private_ip": null,
+            "disable_api_termination": null,
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"node1\"}",
+            "ebs_optimized": null,
+            "root_block_device": null,
+            "key_name": "PallaviKey",
+            "security_groups": "",
+            "vpc_security_group_ids": "${security_grp1.id}",
+            "name": "node1",
+            "instance_initiated_shutdown_behavior": "terminate",
+            "subnet_id": "${subnet_public1.id}",
+            "ami": "ami-4836a428",
+            "instance_type": "t2.micro",
+            "placement_group": null,
+            "ephemeral_block_device": null
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_vpc",
+          "name": "VPC2",
+          "packages": null,
+          "attributes": {
+            "instance_tenancy": null,
+            "cidr_block": "${var.VPC2_CIDR}",
+            "enable_dns_hostnames": null,
+            "enable_dns_support": null,
+            "enable_classiclink": null,
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"VPC2\"}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": "VPC1",
+          "resourceName": "aws_internet_gateway",
+          "name": "IGW1",
+          "packages": null,
+          "attributes": {
+            "vpc_id": "${VPC1.id}",
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"IGW1\"}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "Input Variables",
+          "name": "Input Variables",
+          "packages": null,
+          "attributes": {
+            "input_variables": "{\"VPC1_CIDR\":\"10.0.0.0/16\",\"VPC2_CIDR\":\"172.16.0.0/16\",\"deploynow_ip\":\"52.24.117.131\",\"my_public_ip\":\"202.149.218.202\",\"EIP1_allocation_id\":\"eipalloc-45b6c17f\",\"EIP2_allocation_id\":\"eipalloc-69b4c353\"}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_security_group",
+          "name": "security_grp2",
+          "packages": null,
+          "attributes": {
+            "ingress": "[{\"from_port\":0,\"to_port\":0,\"protocol\":\"-1\",\"cidr_blocks\":[\"${var.deploynow_ip}/32\",\"${var.my_public_ip}/32\"]}]",
+            "vpc_id": "${VPC2.id}",
+            "name": "security_grp2",
+            "description": null,
+            "egress": "[{\"from_port\":0,\"to_port\":0,\"protocol\":\"-1\",\"cidr_blocks\":[\"0.0.0.0/0\"]}]",
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"security_grp2\"}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": "connection-vpn",
+          "connectionType": "SSH",
+          "customConnection": null,
+          "dependsOn": "subnet_private1",
+          "resourceName": "aws_instance",
+          "name": "node1_private",
+          "packages": null,
+          "attributes": {
+            "ebs_block_device": null,
+            "availability_zone": null,
+            "iam_instance_profile": null,
+            "associate_public_ip_address": null,
+            "tenancy": null,
+            "user_data": null,
+            "source_dest_check": "true",
+            "monitoring": null,
+            "disable_api_termination": null,
+            "private_ip": null,
+            "ebs_optimized": null,
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"node_private1\"}",
+            "root_block_device": null,
+            "key_name": "PallaviKey",
+            "security_groups": null,
+            "name": "node1_private",
+            "vpc_security_group_ids": "${security_grp1_private.id}",
+            "subnet_id": "${subnet_private1.id}",
+            "instance_initiated_shutdown_behavior": "terminate",
+            "ami": "ami-4836a428",
+            "instance_type": "t2.micro",
+            "placement_group": null,
+            "ephemeral_block_device": null
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": "",
+          "resourceName": "aws_security_group",
+          "name": "security_grp1_private",
+          "packages": null,
+          "attributes": {
+            "ingress": "[{\"from_port\":0,\"to_port\":0,\"protocol\":\"-1\",\"cidr_blocks\":[\"${var.my_public_ip}/32\",\"${node1.private_ip}/32\",\"${node2.private_ip}/32\"]}]",
+            "vpc_id": "${VPC1.id}",
+            "name": "security_grp1_private",
+            "description": null,
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"security_grp1_private\"}",
+            "egress": "[{\"from_port\":0,\"to_port\":0,\"protocol\":\"-1\",\"cidr_blocks\":[\"0.0.0.0/0\"]}]"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_eip_association",
+          "name": "EIP1",
+          "packages": null,
+          "attributes": {
+            "public_ip": null,
+            "instance_id": "${node1.id}",
+            "allocation_id": "${var.EIP1_allocation_id}",
+            "private_ip_address": null,
+            "allow_reassociation": null,
+            "network_interface_id": null
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": "VPC1",
+          "resourceName": "aws_route_table",
+          "name": "route1",
+          "packages": null,
+          "attributes": {
+            "route": "[{\"cidr_block\":\"0.0.0.0/0\",\"gateway_id\":\"${IGW1.id}\"},{\"cidr_block\":\"${var.VPC2_CIDR}\",\"instance_id\":\"${node1.id}\"}]",
+            "vpc_id": "${VPC1.id}",
+            "propagating_vgws": "",
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"route1\"}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": "",
+          "resourceName": "aws_subnet",
+          "name": "subnet_public1",
+          "packages": null,
+          "attributes": {
+            "availability_zone": null,
+            "vpc_id": "${VPC1.id}",
+            "cidr_block": "10.0.0.0/24",
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"subnet_public1\"}",
+            "map_public_ip_on_launch": "true"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": "VPC1",
+          "resourceName": "aws_subnet",
+          "name": "subnet_private1",
+          "packages": null,
+          "attributes": {
+            "availability_zone": null,
+            "vpc_id": "${VPC1.id}",
+            "cidr_block": "10.0.1.0/24",
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"subnet_private1\"}",
+            "map_public_ip_on_launch": "false"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_route_table_association",
+          "name": "route_table_asso_pri_sub",
+          "packages": null,
+          "attributes": {
+            "route_table_id": "${route1.id}",
+            "subnet_id": "${subnet_private1.id}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": "connection-vpn",
+          "connectionType": "SSH",
+          "customConnection": null,
+          "dependsOn": "subnet_public2",
+          "resourceName": "aws_instance",
+          "name": "node2",
+          "packages": null,
+          "attributes": {
+            "ebs_block_device": null,
+            "availability_zone": null,
+            "iam_instance_profile": null,
+            "associate_public_ip_address": "true",
+            "tenancy": null,
+            "user_data": null,
+            "monitoring": null,
+            "source_dest_check": "false",
+            "private_ip": null,
+            "disable_api_termination": null,
+            "root_block_device": null,
+            "ebs_optimized": null,
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"node2\"}",
+            "key_name": "PallaviKey",
+            "security_groups": null,
+            "vpc_security_group_ids": "${security_grp2.id}",
+            "name": "node2",
+            "instance_initiated_shutdown_behavior": "terminate",
+            "subnet_id": "${subnet_public2.id}",
+            "ami": "ami-4836a428",
+            "instance_type": "t2.micro",
+            "placement_group": null,
+            "ephemeral_block_device": null
+          }
+        },
+        {
+          "count": null,
+          "connectionName": "connection-vpn",
+          "connectionType": "SSH",
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_instance",
+          "name": "node2_private",
+          "packages": null,
+          "attributes": {
+            "availability_zone": null,
+            "ebs_block_device": null,
+            "iam_instance_profile": null,
+            "associate_public_ip_address": null,
+            "tenancy": null,
+            "user_data": null,
+            "monitoring": null,
+            "source_dest_check": "true",
+            "disable_api_termination": null,
+            "private_ip": null,
+            "ebs_optimized": null,
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"node2_private\"}",
+            "root_block_device": null,
+            "key_name": "PallaviKey",
+            "security_groups": null,
+            "vpc_security_group_ids": "${security_grp2_private.id}",
+            "name": "node2_private",
+            "subnet_id": "${subnet_private2.id}",
+            "instance_initiated_shutdown_behavior": "terminate",
+            "ami": "ami-4836a428",
+            "instance_type": "t2.micro",
+            "placement_group": null,
+            "ephemeral_block_device": null
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_eip_association",
+          "name": "EIP2",
+          "packages": null,
+          "attributes": {
+            "public_ip": null,
+            "instance_id": "${node2.id}",
+            "allocation_id": "${var.EIP2_allocation_id}",
+            "private_ip_address": null,
+            "allow_reassociation": null,
+            "network_interface_id": null
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_subnet",
+          "name": "subnet_public2",
+          "packages": null,
+          "attributes": {
+            "availability_zone": null,
+            "vpc_id": "${VPC2.id}",
+            "cidr_block": "172.16.0.0/24",
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"subnet_public2\"}",
+            "map_public_ip_on_launch": "true"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_route_table_association",
+          "name": "route_table_ass2_pub_sub",
+          "packages": null,
+          "attributes": {
+            "route_table_id": "${route2.id}",
+            "subnet_id": "${subnet_public2.id}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": "",
+          "resourceName": "aws_vpc",
+          "name": "VPC1",
+          "packages": null,
+          "attributes": {
+            "instance_tenancy": null,
+            "cidr_block": "${var.VPC1_CIDR}",
+            "enable_dns_hostnames": null,
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"VPC1\"}",
+            "enable_dns_support": null,
+            "enable_classiclink": null
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_subnet",
+          "name": "subnet_private2",
+          "packages": null,
+          "attributes": {
+            "availability_zone": null,
+            "vpc_id": "${VPC2.id}",
+            "cidr_block": "172.16.1.0/24",
+            "map_public_ip_on_launch": "false",
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"subnet_private2\"}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_internet_gateway",
+          "name": "IGW2",
+          "packages": null,
+          "attributes": {
+            "vpc_id": "${VPC2.id}",
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"IGW2\"}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_route_table",
+          "name": "route2",
+          "packages": null,
+          "attributes": {
+            "route": "[{\"cidr_block\":\"0.0.0.0/0\",\"gateway_id\":\"${IGW2.id}\"},{\"cidr_block\":\"${var.VPC1_CIDR}\",\"instance_id\":\"${node2.id}\"}]",
+            "vpc_id": "${VPC2.id}",
+            "propagating_vgws": null,
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"route2\"}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_security_group",
+          "name": "security_grp1",
+          "packages": null,
+          "attributes": {
+            "ingress": "[{\"from_port\":0,\"to_port\":0,\"protocol\":\"-1\",\"cidr_blocks\":[\"${var.deploynow_ip}/32\",\"${var.my_public_ip}/32\"]}]",
+            "vpc_id": "${VPC1.id}",
+            "name": "security_grp1",
+            "description": null,
+            "egress": "[{\"from_port\":0,\"to_port\":0,\"protocol\":\"-1\",\"cidr_blocks\":[\"0.0.0.0/0\"]}]",
+            "tags": "{\"Owner\":\"pallavi\",\"CreatedBy\":\"DeployNow\",\"Name\":\"security_grp1\"}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_route_table_association",
+          "name": "route_table_asso_pub_sub",
+          "packages": null,
+          "attributes": {
+            "route_table_id": "${route1.id}",
+            "subnet_id": "${subnet_public1.id}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_route_table_association",
+          "name": "route_table_ass2_pri_sub",
+          "packages": null,
+          "attributes": {
+            "route_table_id": "${route2.id}",
+            "subnet_id": "${subnet_private2.id}"
+          }
+        }
+      ],
+      "location": null,
+      "type": null
+    },
+    {
+      "preDeployScript": null,
+      "postDeployScript": null,
+      "preDestroyScript": null,
+      "postDestroyScript": null,
+      "exportedByEmail": "auto@mailinator.com",
+      "exportedOn": 1493887155309,
+      "providerType": "aws",
+      "providerName": "Auto_AWS",
+      "connectionName": "connection-vpn",
+      "connectionType": "SSH",
+      "layout": "[ {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 286.3095703125,\n    \"height\" : 35\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 30,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 309,\n    \"y\" : 116\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"REAN-VPN-between-VPCs-Network-Blueprint\",\n  \"resource\" : {\n    \"name\" : \"REAN-VPN-between-VPCs-Network-Blueprint\",\n    \"resourceName\" : \"Depends_On\",\n    \"count\" : 1\n  },\n  \"image\" : null,\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"bfcca0f8-c0a6-4555-902a-ab7b49810480\",\n  \"z\" : 1,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 30\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 77\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"REAN-VPN-between-VPCs-Network-Blueprint\",\n      \"y\" : \"1.2em\"\n    },\n    \".resourceNode-image\" : {\n      \"display\" : \"none\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 70\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 139,\n    \"y\" : 204\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"node1_resource\",\n  \"resource\" : {\n    \"name\" : \"node1_resource\",\n    \"resourceName\" : \"null_resource\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/null.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#ecebeb\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#ecebeb\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      },\n      \"stroke\" : \"#003051\",\n      \"stroke-width\" : \"1px\"\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"#003051\"\n    }\n  },\n  \"packages\" : [ {\n    \"packageName\" : \"rean-secure-communication\"\n  } ],\n  \"id\" : \"7426206a-ab5b-44dc-9ca9-e95031d5ad9b\",\n  \"z\" : 2,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"stroke\" : \"#003051\",\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#ecebeb\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#ecebeb\"\n        } ]\n      },\n      \"stroke-width\" : \"1px\"\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 73\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"#003051\",\n      \"text\" : \"node1_resource\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/null.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    },\n    \".package-9\" : {\n      \"transform\" : \"translate(0, 0)\",\n      \"dynamic\" : true\n    },\n    \".package-9 .package-rect\" : {\n      \"height\" : 25,\n      \"dynamic\" : true\n    },\n    \".package-9 .package-port .port-body\" : {\n      \"port\" : 9,\n      \"dynamic\" : true\n    },\n    \".package-9 .package-text\" : {\n      \"text\" : \"rean-secure-communication\",\n      \"dynamic\" : true\n    },\n    \".package-9 .package-delete\" : {\n      \"packageId\" : 9,\n      \"dynamic\" : true\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 70\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 506,\n    \"y\" : 211\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"node2_resource\",\n  \"resource\" : {\n    \"name\" : \"node2_resource\",\n    \"resourceName\" : \"null_resource\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/null.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#ecebeb\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#ecebeb\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      },\n      \"stroke\" : \"#003051\",\n      \"stroke-width\" : \"1px\"\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"#003051\"\n    }\n  },\n  \"packages\" : [ {\n    \"packageName\" : \"rean-secure-communication\"\n  } ],\n  \"id\" : \"b106f01b-924c-45f6-8ac5-75ef2ad3c373\",\n  \"z\" : 4,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"stroke\" : \"#003051\",\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#ecebeb\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#ecebeb\"\n        } ]\n      },\n      \"stroke-width\" : \"1px\"\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 75\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"#003051\",\n      \"text\" : \"node2_resource\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/null.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    },\n    \".package-10\" : {\n      \"transform\" : \"translate(0, 0)\",\n      \"dynamic\" : true\n    },\n    \".package-10 .package-rect\" : {\n      \"height\" : 25,\n      \"dynamic\" : true\n    },\n    \".package-10 .package-port .port-body\" : {\n      \"port\" : 10,\n      \"dynamic\" : true\n    },\n    \".package-10 .package-text\" : {\n      \"text\" : \"rean-secure-communication\",\n      \"dynamic\" : true\n    },\n    \".package-10 .package-delete\" : {\n      \"packageId\" : 10,\n      \"dynamic\" : true\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 153,\n    \"y\" : 326\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"update_security_grp1\",\n  \"resource\" : {\n    \"name\" : \"update_security_grp1\",\n    \"resourceName\" : \"aws_security_group_rule\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/aws.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"d8bc66ac-52e4-4acc-9d73-81cdf2cb5936\",\n  \"z\" : 5,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 71\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"update_security_grp1\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/aws.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 150,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 531,\n    \"y\" : 320\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"update_security_grp2\",\n  \"resource\" : {\n    \"name\" : \"update_security_grp2\",\n    \"resourceName\" : \"aws_security_group_rule\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/aws.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"ef1fc7f2-f93c-4eb0-8603-ab69a53da805\",\n  \"z\" : 9,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 76\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"update_security_grp2\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/aws.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 184.4541015625,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 202,\n    \"y\" : 434\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"update_security_grp1_private\",\n  \"resource\" : {\n    \"name\" : \"update_security_grp1_private\",\n    \"resourceName\" : \"aws_security_group_rule\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/aws.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"a0484fb6-85cf-43f0-bff8-012a79e39f5e\",\n  \"z\" : 14,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 74\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"update_security_grp1_private\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/aws.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n}, {\n  \"type\" : \"opex.ResourceNode\",\n  \"size\" : {\n    \"width\" : 184.4541015625,\n    \"height\" : 45\n  },\n  \"packageHeight\" : 25,\n  \"resourceNodeHeight\" : 40,\n  \"paddingBottom\" : 5,\n  \"minWidth\" : 150,\n  \"imageHeight\" : 18,\n  \"inPorts\" : [ ],\n  \"outPorts\" : [ ],\n  \"position\" : {\n    \"x\" : 439,\n    \"y\" : 434\n  },\n  \"angle\" : 0,\n  \"resourceNode\" : \"update_security_grp2_private\",\n  \"resource\" : {\n    \"name\" : \"update_security_grp2_private\",\n    \"resourceName\" : \"aws_security_group_rule\",\n    \"count\" : 1\n  },\n  \"image\" : \"/images/aws/aws.png\",\n  \"style\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"type\" : \"linearGradient\",\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ],\n        \"attrs\" : {\n          \"x1\" : \"0%\",\n          \"y1\" : \"0%\",\n          \"x2\" : \"0%\",\n          \"y2\" : \"100%\"\n        }\n      }\n    },\n    \".resourceNode-text\" : {\n      \"fill\" : \"white\"\n    }\n  },\n  \"packages\" : [ ],\n  \"id\" : \"e9f30fdd-68d8-4ec6-aac0-8dd2f2be5088\",\n  \"z\" : 15,\n  \"hideDeleteIcons\" : false,\n  \"attrs\" : {\n    \".body\" : {\n      \"fill\" : {\n        \"stops\" : [ {\n          \"offset\" : \"0%\",\n          \"color\" : \"#008080\"\n        }, {\n          \"offset\" : \"100%\",\n          \"color\" : \"#008080\"\n        } ]\n      }\n    },\n    \".packages\" : {\n      \"ref-y\" : 40\n    },\n    \".count-text\" : {\n      \"text\" : \"1\"\n    },\n    \".delete-resource\" : {\n      \"resourceId\" : 72\n    },\n    \".resourceNode-text\" : {\n      \"text\" : \"update_security_grp2_private\",\n      \"y\" : \"2.6em\"\n    },\n    \".resourceNode-image\" : {\n      \"xlink:href\" : \"/images/aws/aws.png\",\n      \"display\" : \"\"\n    },\n    \".count-circle\" : {\n      \"display\" : \"none\"\n    }\n  }\n} ]",
+      "description": "Node's configuration from different VPC",
+      "name": "REAN-VPN-between-VPCs-Blueprint",
+      "resources": [
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "Depends_On",
+          "name": "REAN-VPN-between-VPCs-Network-Blueprint",
+          "packages": null,
+          "attributes": {
+            "Depends_On": "REAN-VPN-between-VPCs-Network-Blueprint"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": "connection-vpn",
+          "connectionType": "SSH",
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "null_resource",
+          "name": "node2_resource",
+          "packages": [
+            {
+              "name": "rean-secure-communication",
+              "attributes": {
+                "VPC2_CIDR": "${REAN-VPN-between-VPCs-Network-Blueprint.VPC2_CIDR}",
+                "PASSWORD": "rean@123",
+                "EIP1": "${REAN-VPN-between-VPCs-Network-Blueprint.EIP1}",
+                "EIP2": "${REAN-VPN-between-VPCs-Network-Blueprint.EIP2}",
+                "node1": "false",
+                "VPC1_CIDR": "${REAN-VPN-between-VPCs-Network-Blueprint.VPC1_CIDR}"
+              }
+            }
+          ],
+          "attributes": {
+            "host": "${REAN-VPN-between-VPCs-Network-Blueprint.EIP2}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_security_group_rule",
+          "name": "update_security_grp1_private",
+          "packages": null,
+          "attributes": {
+            "protocol": "TCP",
+            "cidr_blocks": "${REAN-VPN-between-VPCs-Network-Blueprint.node2_private_ip}/32\n${REAN-VPN-between-VPCs-Network-Blueprint.EIP2}/32\n${REAN-VPN-between-VPCs-Network-Blueprint.EIP1}/32\n\n",
+            "to_port": "22",
+            "security_group_id": "${REAN-VPN-between-VPCs-Network-Blueprint.security_grp1_private_id}",
+            "from_port": "22",
+            "type": "ingress"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": "connection-vpn",
+          "connectionType": "SSH",
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "null_resource",
+          "name": "node1_resource",
+          "packages": [
+            {
+              "name": "rean-secure-communication",
+              "attributes": {
+                "VPC2_CIDR": "${REAN-VPN-between-VPCs-Network-Blueprint.VPC2_CIDR}",
+                "PASSWORD": "rean@123",
+                "EIP1": "${REAN-VPN-between-VPCs-Network-Blueprint.EIP1}",
+                "EIP2": "${REAN-VPN-between-VPCs-Network-Blueprint.EIP2}",
+                "node1": "true",
+                "VPC1_CIDR": "${REAN-VPN-between-VPCs-Network-Blueprint.VPC1_CIDR}"
+              }
+            }
+          ],
+          "attributes": {
+            "host": "${REAN-VPN-between-VPCs-Network-Blueprint.EIP1}"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_security_group_rule",
+          "name": "update_security_grp2_private",
+          "packages": null,
+          "attributes": {
+            "protocol": "TCP",
+            "cidr_blocks": "${REAN-VPN-between-VPCs-Network-Blueprint.node1_private_ip}/32\n${REAN-VPN-between-VPCs-Network-Blueprint.EIP2}/32\n${REAN-VPN-between-VPCs-Network-Blueprint.EIP1}/32",
+            "to_port": "22",
+            "security_group_id": "${REAN-VPN-between-VPCs-Network-Blueprint.security_grp2_private_id}",
+            "from_port": "22",
+            "type": "ingress"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_security_group_rule",
+          "name": "update_security_grp1",
+          "packages": null,
+          "attributes": {
+            "protocol": "TCP",
+            "cidr_blocks": "${REAN-VPN-between-VPCs-Network-Blueprint.node1_private_ip}/32\n${REAN-VPN-between-VPCs-Network-Blueprint.node2_private_ip}/32\n${REAN-VPN-between-VPCs-Network-Blueprint.EIP2}/32\n${REAN-VPN-between-VPCs-Network-Blueprint.node2_ip}/32",
+            "security_group_id": "${REAN-VPN-between-VPCs-Network-Blueprint.security_grp1_id}",
+            "to_port": "22",
+            "from_port": "22",
+            "type": "ingress"
+          }
+        },
+        {
+          "count": null,
+          "connectionName": null,
+          "connectionType": null,
+          "customConnection": null,
+          "dependsOn": null,
+          "resourceName": "aws_security_group_rule",
+          "name": "update_security_grp2",
+          "packages": null,
+          "attributes": {
+            "protocol": "TCP",
+            "cidr_blocks": "${REAN-VPN-between-VPCs-Network-Blueprint.node1_private_ip}/32\n${REAN-VPN-between-VPCs-Network-Blueprint.node2_private_ip}/32\n${REAN-VPN-between-VPCs-Network-Blueprint.EIP1}/32\n${REAN-VPN-between-VPCs-Network-Blueprint.node1_ip}/32\n",
+            "to_port": "22",
+            "security_group_id": "${REAN-VPN-between-VPCs-Network-Blueprint.security_grp2_id}",
+            "from_port": "22",
+            "type": "ingress"
+          }
+        }
+      ],
+      "location": null,
+      "type": null
+    }
+  ],
+  "packages": [
+    {
+      "packageName": "rean-secure-communication",
+      "zipFileName": "rean-secure-communication-0.1.0.tar.gz",
+      "dependentPackages": [],
+      "isPrivate": true,
+      "imgUrl": "favicon.ico",
+      "accessToken": "a668ca56e7a4c3a083263e6c4925ec6be62dc6d7",
+      "execValue": null,
+      "manifestFile": null,
+      "installModule": true,
+      "unzippedName": "rean-secure-communication-0.1.0",
+      "playbook": null,
+      "downloadUrl": "https://github.com/reancloud/rean-secure-communication/archive/v0.1.0.tar.gz",
+      "visible": true,
+      "type": "chef",
+      "attributes": [
+        {
+          "required": true,
+          "defaultJson": null,
+          "possibleValues": [
+            "true",
+            "false"
+          ],
+          "sampleValue": null,
+          "secure": false,
+          "name": "node1",
+          "type": "boolean",
+          "defaultValue": "true"
+        },
+        {
+          "required": true,
+          "defaultJson": null,
+          "possibleValues": [],
+          "sampleValue": null,
+          "secure": false,
+          "name": "EIP1",
+          "type": "String",
+          "defaultValue": null
+        },
+        {
+          "required": true,
+          "defaultJson": null,
+          "possibleValues": [],
+          "sampleValue": null,
+          "secure": false,
+          "name": "EIP2",
+          "type": "String",
+          "defaultValue": null
+        },
+        {
+          "required": true,
+          "defaultJson": null,
+          "possibleValues": [],
+          "sampleValue": null,
+          "secure": false,
+          "name": "VPC1_CIDR",
+          "type": "String",
+          "defaultValue": null
+        },
+        {
+          "required": true,
+          "defaultJson": null,
+          "possibleValues": [],
+          "sampleValue": null,
+          "secure": false,
+          "name": "VPC2_CIDR",
+          "type": "String",
+          "defaultValue": null
+        },
+        {
+          "required": true,
+          "defaultJson": null,
+          "possibleValues": [],
+          "sampleValue": null,
+          "secure": false,
+          "name": "PASSWORD",
+          "type": "String",
+          "defaultValue": "rean@123"
+        }
+      ],
+      "createdBy": null,
+      "modifiedOn": null,
+      "createdOn": null,
+      "modifiedBy": null,
+      "id": null
+    },
+    {
+      "packageName": "rean-secure-communication",
+      "zipFileName": "rean-secure-communication-0.1.0.tar.gz",
+      "dependentPackages": [],
+      "isPrivate": true,
+      "imgUrl": "favicon.ico",
+      "accessToken": "a668ca56e7a4c3a083263e6c4925ec6be62dc6d7",
+      "execValue": null,
+      "manifestFile": null,
+      "installModule": true,
+      "unzippedName": "rean-secure-communication-0.1.0",
+      "playbook": null,
+      "downloadUrl": "https://github.com/reancloud/rean-secure-communication/archive/v0.1.0.tar.gz",
+      "visible": true,
+      "type": "chef",
+      "attributes": [
+        {
+          "required": true,
+          "defaultJson": null,
+          "possibleValues": [
+            "true",
+            "false"
+          ],
+          "sampleValue": null,
+          "secure": false,
+          "name": "node1",
+          "type": "boolean",
+          "defaultValue": "true"
+        },
+        {
+          "required": true,
+          "defaultJson": null,
+          "possibleValues": [],
+          "sampleValue": null,
+          "secure": false,
+          "name": "EIP1",
+          "type": "String",
+          "defaultValue": null
+        },
+        {
+          "required": true,
+          "defaultJson": null,
+          "possibleValues": [],
+          "sampleValue": null,
+          "secure": false,
+          "name": "EIP2",
+          "type": "String",
+          "defaultValue": null
+        },
+        {
+          "required": true,
+          "defaultJson": null,
+          "possibleValues": [],
+          "sampleValue": null,
+          "secure": false,
+          "name": "VPC1_CIDR",
+          "type": "String",
+          "defaultValue": null
+        },
+        {
+          "required": true,
+          "defaultJson": null,
+          "possibleValues": [],
+          "sampleValue": null,
+          "secure": false,
+          "name": "VPC2_CIDR",
+          "type": "String",
+          "defaultValue": null
+        },
+        {
+          "required": true,
+          "defaultJson": null,
+          "possibleValues": [],
+          "sampleValue": null,
+          "secure": false,
+          "name": "PASSWORD",
+          "type": "String",
+          "defaultValue": "rean@123"
+        }
+      ],
+      "createdBy": null,
+      "modifiedOn": null,
+      "createdOn": null,
+      "modifiedBy": null,
+      "id": null
+    }
+  ]
+}
