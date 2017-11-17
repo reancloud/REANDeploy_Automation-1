@@ -1,10 +1,10 @@
-/*package com.opex.test.pageobjects;
+package com.opex.test.pageobjects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class AWS_ECS_Task_Def_Page {
+public class AWSECSTaskDefPageObject {
 	
 	
 	@FindBy(how=How.XPATH, xpath="//div[@title='AWS ECS Task Definition']")
@@ -29,5 +29,3 @@ public class AWS_ECS_Task_Def_Page {
 	public static WebElement click_resource_EcsTaskdef;
 
 }
-
-*/
