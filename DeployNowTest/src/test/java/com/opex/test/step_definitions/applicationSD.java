@@ -48,41 +48,28 @@ public class applicationSD extends SuperUsedDefinition{
 		@Then("^Verify User is on correct application URL$")
 		public void Verify_user_is_on_correct_app() throws Throwable
 		{
-			Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(), 'Name')]")).getText(),true);
+			Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(), 'About Currency Converter')]")).getText(),true);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			String str = driver.findElement(By.xpath("//*[contains(text(), 'Name')]")).getText();
+			String str = driver.findElement(By.xpath("//*[contains(text(), 'About Currency Converter')]")).getText();
 			System.out.println(str);
 		}
-		@When("^User enter the Name of the user$")
-		public void User_enter_the_Name_of_the_user() throws Throwable
+		
+		@When("^User Clicks on currency converter link$")
+		public void user_clicks_on_currency_converter_link() throws Throwable
 		{
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			driver.findElement(By.xpath("//input[@ng-model='ctrl.user.name']")).sendKeys("sekhar");
+			driver.findElement(By.xpath("//*[@id='form2']/ul/li[2]/a")).click();
 			
-		}
-		@Then("^user enter the age of the user$")
-		public void user_enter_the_age_of_the_user() throws Throwable
-		{
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			driver.findElement(By.xpath("//input[@ng-model='ctrl.user.age']")).sendKeys("27");
-			
-		}
-		@Then("^user enter the salary of the user$")
-		public void user_enter_the_salary_of_the_user() throws Throwable
-		{
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			driver.findElement(By.xpath("//input[@ng-model='ctrl.user.salary']")).sendKeys("30000");
-			
-		}
-		@Then("^click the add button on the web page$")
-		public void click_the_add_button_on_the_webpage() throws Throwable
-		{
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			driver.findElement(By.xpath("//input[@value='Add']")).click();
-			driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
 		}
 		
-		
+		@Then("^User should be redirected to currency converter page$")
+		public void user_should_be_redirected_to_converter_page() throws Throwable
+		{
+			Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(), 'Convert Ghana Cedis to any other Currency')]")).getText(),true);
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			String str = driver.findElement(By.xpath("//*[contains(text(), 'Convert Ghana Cedis to any other Currency')]")).getText();
+			System.out.println(str);
+		}
       
 }   	 
 

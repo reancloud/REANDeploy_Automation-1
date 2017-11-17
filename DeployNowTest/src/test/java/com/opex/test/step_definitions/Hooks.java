@@ -50,7 +50,7 @@ public class Hooks{
      */
     public void embedScreenshot(Scenario scenario) {
        
-        if(scenario.isFailed()) {
+//        if(scenario.isFailed()) {
         try {
         	 scenario.write("Current Page URL is " + driver.getCurrentUrl());
 //            byte[] screenshot = getScreenshotAs(OutputType.BYTES);
@@ -60,7 +60,7 @@ public class Hooks{
             System.err.println(somePlatformsDontSupportScreenshots.getMessage());
         }
         
-        }
+//        }
         driver.quit();
         
     }

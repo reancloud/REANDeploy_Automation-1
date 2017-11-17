@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
 
 		
 		//tags = {"@RegressionTest"}
-			tags = {""}
+			tags = {"@app_test"}
 				//tags = {"@P1"}
 				//tags = {"@P2"}
 				//tags = {"@P3"}
