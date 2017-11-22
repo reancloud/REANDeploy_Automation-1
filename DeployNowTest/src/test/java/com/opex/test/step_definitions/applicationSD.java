@@ -12,13 +12,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-import com.opex.test.modules.SignInAction;
-import com.opex.test.modules.SignoutAction;
-import com.opex.test.modules.SignupPageAction;
-import com.opex.test.pageobjects.CommonPage;
-import com.opex.test.pageobjects.LoginPage;
-import com.opex.test.pageobjects.LogoutPage;
-import com.opex.test.pageobjects.SignupPage;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
