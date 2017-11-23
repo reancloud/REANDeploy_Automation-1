@@ -1,8 +1,7 @@
 @app_test
 Feature: functional test for application
 
-Background:
-  Given User direct to deploy now application
+
  		  
 Scenario: 
 #Scenario 1

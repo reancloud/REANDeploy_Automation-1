@@ -3,7 +3,7 @@ package com.opex.test.helpers;
 import java.io.InputStream;
 import java.util.Properties;
 
-import com.opex.test.entity.AwspecPackage;
+
 import com.opex.test.entity.DeployNowSignInUser;
 import com.opex.test.entity.DeployNowSignUpUser;
 import com.opex.test.entity.WebUrl;
@@ -19,7 +19,7 @@ public class DataHelper {
 	
 	
 	private static Properties properties;
-	private static AwspecPackage awspec_pkgDetails = null;
+	
     
 	
 	
@@ -77,17 +77,7 @@ public class DataHelper {
 	}
 	
 
-	public static AwspecPackage getawsspecDetailsFromPropertiesFile() {
-		DataHelper.getReadPropertiesFile();
-		String source_username= properties.getProperty(SOURCE_USERNAME);
-		String source_password =properties.getProperty(SOURCE_PASSWORD);
-		String source_url =properties.getProperty(SOURCE_URL_);
-		awspec_pkgDetails = new AwspecPackage();
-		awspec_pkgDetails.setAwspec_username(source_username);
-		awspec_pkgDetails.setAwspec_password(source_password);
-		awspec_pkgDetails.setAwspec_url(source_url);
-		return awspec_pkgDetails;
-	}
+	
 	public static String getDeployNowLoginURL() 
 	{
 		String baseUrl = null;

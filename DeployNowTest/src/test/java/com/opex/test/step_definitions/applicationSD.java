@@ -12,13 +12,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-import com.opex.test.modules.SignInAction;
-import com.opex.test.modules.SignoutAction;
-import com.opex.test.modules.SignupPageAction;
-import com.opex.test.pageobjects.CommonPage;
-import com.opex.test.pageobjects.LoginPage;
-import com.opex.test.pageobjects.LogoutPage;
-import com.opex.test.pageobjects.SignupPage;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -56,28 +49,28 @@ public class applicationSD extends SuperUsedDefinition{
 		@When("^User enter the Name of the user$")
 		public void User_enter_the_Name_of_the_user() throws Throwable
 		{
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
 			driver.findElement(By.xpath("//input[@ng-model='ctrl.user.name']")).sendKeys("sekhar");
 			
 		}
 		@Then("^user enter the age of the user$")
 		public void user_enter_the_age_of_the_user() throws Throwable
 		{
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
 			driver.findElement(By.xpath("//input[@ng-model='ctrl.user.age']")).sendKeys("27");
 			
 		}
 		@Then("^user enter the salary of the user$")
 		public void user_enter_the_salary_of_the_user() throws Throwable
 		{
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
 			driver.findElement(By.xpath("//input[@ng-model='ctrl.user.salary']")).sendKeys("30000");
 			
 		}
 		@Then("^click the add button on the web page$")
 		public void click_the_add_button_on_the_webpage() throws Throwable
 		{
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
 			driver.findElement(By.xpath("//input[@value='Add']")).click();
 			driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
 		}
