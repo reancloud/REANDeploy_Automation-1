@@ -7,7 +7,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -61,6 +60,16 @@ public class Hooks{
         }
         
         }
+        driver.quit();
+        
+    }
+    public void embedScreenshot1(Scenario scenario) {
+        
+        scenario.write("Current Page URL is " + driver.getCurrentUrl());
+//            byte[] screenshot = getScreenshotAs(OutputType.BYTES);
+            byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+            scenario.embed(screenshot, "image/png");
+      
         driver.quit();
         
     }
