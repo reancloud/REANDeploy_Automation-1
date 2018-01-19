@@ -47,7 +47,8 @@ public class Hooks{
     /**
      * Embed a screenshot in test report if test is marked as failed
      */
-    public void embedScreenshot(Scenario scenario) {
+    
+	public void embedScreenshot(Scenario scenario) {
        
         if(scenario.isFailed()) {
         try {
@@ -60,18 +61,19 @@ public class Hooks{
         }
         
         }
+        else 
+        {
+        	try {
+           	 scenario.write("Current Page URL is " + driver.getCurrentUrl());
+//               byte[] screenshot = getScreenshotAs(OutputType.BYTES);
+               byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+               scenario.embed(screenshot, "image/png");
+           } catch (WebDriverException somePlatformsDontSupportScreenshots) {
+               System.err.println(somePlatformsDontSupportScreenshots.getMessage());
+           }
+        }
         driver.quit();
         
     }
-    public void embedScreenshot1(Scenario scenario) {
-        
-        scenario.write("Current Page URL is " + driver.getCurrentUrl());
-//            byte[] screenshot = getScreenshotAs(OutputType.BYTES);
-            byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-            scenario.embed(screenshot, "image/png");
-      
-        driver.quit();
-        
-    }
-    
-}
+   
+   }
