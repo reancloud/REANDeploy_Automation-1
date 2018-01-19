@@ -3,7 +3,7 @@ package com.opex.test.entity;
 public class WebUrl {
 	
 	String target_url;
-
+   
 	public String getTarget_url() {
 		return target_url;
 	}
