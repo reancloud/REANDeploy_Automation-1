@@ -23,8 +23,7 @@ Scenario: To check the functionality of Edit user information
           Then User click on Remove button and user should get removed successfully   
  
           
- Scenario: To check the functionality of Remove user information
-         Then User click on Remove button and user should get removed successfully   
+ Scenario: To check the functionality of Remove user information  
           When User click on name field and enter the name
           And User click on age field and enter the age
           And User click on salary field and enter the salary
