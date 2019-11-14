@@ -30,7 +30,7 @@ public class Hooks{
     	System.out.println("Called openBrowser");
     	DesiredCapabilities capability = DesiredCapabilities.chrome();
 		capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-    	System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+    	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
     	
     	//System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.Jdk14Logger");
     	
@@ -38,7 +38,7 @@ public class Hooks{
     	driver = new ChromeDriver();
    
     	driver.manage().deleteAllCookies();
-    	//driver.manage().window().maximize();
+    	driver.manage().window().maximize();
     	
     }
 

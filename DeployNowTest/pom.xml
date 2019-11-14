@@ -4,10 +4,10 @@
 	
 
 	<groupId>cucumber</groupId>
-	<artifactId>CRS_Automation</artifactId>
+	<artifactId>DeployNowAutomation</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
-	<name>CRS Automation With CucumberJVM</name>
+	<name>DeployNow AAutomation With CucumberJVM</name>
 
 
 	<dependencies>
